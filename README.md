@@ -1,11 +1,11 @@
-About ezdag
-===========
+About ezdag-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ezdag-feedstock/blob/main/LICENSE.txt)
 
 Home: https://git.ligo.org/patrick.godwin/ezdag
 
 Package license: MPL-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ezdag-feedstock/blob/main/LICENSE.txt)
 
 Summary: high-level HTCondor DAG generation library
 
