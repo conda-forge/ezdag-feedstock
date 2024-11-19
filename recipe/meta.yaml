@@ -1,13 +1,14 @@
 {% set name = "ezdag" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ezdag-{{ version }}.tar.gz
-  sha256: 34cdc13f3100532497e42d5451cae67c82ddfab7f08f85630bcc48b8fef54a48
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ezdag-{{ version }}.tar.gz
+  sha256: 569a6981557950a76fb54e58d41d759b5ac13ac202bfbd5a5a318cd7b497fc6b
 
 build:
   noarch: python
@@ -16,23 +17,27 @@ build:
 
 requirements:
   host:
-    - python >=3.8
-    - setuptools >=42
-    - setuptools-scm >=3.4
-    - wheel
-    - setuptools-scm
     - pip
+    - python {{ python_min }}
+    - hatchling
+    - hatch-vcs
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - python-htcondor >=9
 
 test:
-  imports:
-    - ezdag
+  requires:
+    - python {{ python_min }}
+    - pip
+    - graphviz
+    - python-graphviz
+    - pytest
+    - pytest-cov
+    - pytest-datadir
   commands:
     - pip check
-  requires:
-    - pip
+    - pip show ezdag
+    - pytest -ra --pyargs ezdag
 
 about:
   home: https://git.ligo.org/patrick.godwin/ezdag
