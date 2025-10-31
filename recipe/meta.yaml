@@ -1,5 +1,5 @@
 {% set name = "ezdag" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ezdag-{{ version }}.tar.gz
-  sha256: 569a6981557950a76fb54e58d41d759b5ac13ac202bfbd5a5a318cd7b497fc6b
+  sha256: e6e00b55e321e115150e5dc093ab3db9e47104ec36185a607214a23cc71635c1
 
 build:
   noarch: python
