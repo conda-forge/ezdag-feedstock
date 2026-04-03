@@ -3,23 +3,22 @@ About ezdag-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ezdag-feedstock/blob/main/LICENSE.txt)
 
-Home: https://git.ligo.org/patrick.godwin/ezdag
+Home: https://git.ligo.org/olivia.godwin/ezdag
 
 Package license: MPL-2.0
 
 Summary: high-level HTCondor DAG generation library
 
-Documentation: https://docs.ligo.org/patrick.godwin/ezdag/
+Documentation: https://ezdag.readthedocs.io
 
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=18541&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ezdag-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
@@ -145,5 +144,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@myNameIsPatrick](https://github.com/myNameIsPatrick/)
+* [@nothisisolivia](https://github.com/nothisisolivia/)
 
